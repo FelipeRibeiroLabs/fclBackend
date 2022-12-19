@@ -1,7 +1,7 @@
 This API was created as a teaching tool and open source so you can see in a practical way how to:
 
 - Connect your backend (javaScript) to the Flow Blockchain using the fcl library;
-- Create functions that call Flow Blockchain scripts to retrieve information about the chain;
+- Create functions that call Flow Blockchain scripts to retrieve data that it's on-chain;
 
 - Create functions that process backend transactions, such as:
      --Single Signature Transaction
