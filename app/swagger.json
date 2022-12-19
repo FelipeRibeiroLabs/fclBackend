@@ -1,0 +1,28 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "FCL Backend API",
+    "description": "This API was created as a teaching tool and open source so you can see in a practical way how to:\n- Connect your backend (javaScript) to the Flow Blockchain using the fcl library;\n- Create functions that call Flow Blockchain scripts to retrieve information about the chain;\n- Create functions that process backend transactions, such as:\n --Single Signature Transaction\n --Multi-signature transactions (sending a signed message to the frontend) \n --Backend validations to ensure that the signature sent is really the right transaction for your application \n --In addition, this API connects to a POSTGRES database and stores blockchain information in its database. \n Although the Flow Blockchain stores all information and is very fast at searching, we will use the database to illustrate how it goes about optimising the user experience and storing information that is hard to find on the network, such as events.  ",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8080/",
+      "description": "FCL Backend Staging API"
+    }
+  ],
+  "paths": {
+    "/healthz": {
+      "get": {
+        "summary": "Health check",
+        "description": "This endpoint is used to check the health of the API",
+        "operationId": "healthz",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
